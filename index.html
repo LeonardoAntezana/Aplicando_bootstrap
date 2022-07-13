@@ -10,47 +10,58 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="estilo.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" 
     integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="estilo.css">
     <title>Un pequeño viaje</title>
 </head>
 <body>
     <div class="container-fluid">
-        <header>
-            <div>
+        <header class="bg-dark text-white row">
+            <div class="d-none d-md-block col-12">
                 <a href="#"><img class="icono" src="./rutas/Images/instagram.png" alt="icono ig"></a>
                 <a href="#"><img class="icono" src="./rutas/Images/twitter.png" alt="icono twitter"></a>
                 <a href="#"><img class="icono" src="./rutas/Images/youtube.png" alt="icono youtube"></a>
             </div>
-            <div>
-                <h1>Un pequeño viaje</h1>
-                <img id="menu" src="./rutas/Images/menu.png" alt="imagen-menu">
+            <div class="pt-4 pb-4 p-md-0 bg-color d-flex justify-content-around align-items-center col-12">
+                <h1 id="titulo_principal" class="m-0">Un pequeño viaje</h1>
+                <div class="dropdown">
+                    <button class="btn" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-expanded="true">
+                        <img class="menu" src="./rutas/Images/menu.png" alt="imagen-menu">
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <li class="link dropdown-item"><a href="index.html">Home</a></li>
+                        <li class="link dropdown-item"><a href="rutas/destinos.html">Destinos</a></li>
+                        <li class="link dropdown-item"><a href="rutas/tips.html">Tips</a></li>
+                        <li class="link dropdown-item"><a href="rutas/aventuras.html">Aventuras</a></li>
+                        <li class="link dropdown-item"><a href="rutas/form-contacto.html">Contacto</a></li>
+                    </ul>
+                </div> 
             </div>
-            <nav>
+            <nav class="d-none">
                 <ul>
-                    <li><a class="link" href="index.html">Home</a></li>
-                    <li><a class="link" href="rutas/destinos.html">Destinos</a></li>
-                    <li><a class="link" href="rutas/tips.html">Tips</a></li>
-                    <li><a class="link" href="rutas/aventuras.html">Aventuras</a></li>
-                    <li><a class="link" href="rutas/form-contacto.html">Contacto</a></li>
+                    <li><a class="link text-decoration-none" href="index.html">Home</a></li>
+                    <li><a class="link text-decoration-none" href="rutas/destinos.html">Destinos</a></li>
+                    <li><a class="link text-decoration-none" href="rutas/tips.html">Tips</a></li>
+                    <li><a class="link text-decoration-none" href="rutas/aventuras.html">Aventuras</a></li>
+                    <li><a class="link text-decoration-none" href="rutas/form-contacto.html">Contacto</a></li>
                 </ul>
             </nav>
         </header>
-        <main>
-            <div>
-                <img class="arrow" src="./rutas/Images/row-left.png" alt="row-left">
-                <a class="link" href="#" target="_blank" rel="link dinamico">Link</a>
-                <img class="arrow" id="row-right" src="./rutas/Images/row-right.png" alt="row-right">        
+        <main class="row">
+            <div id="hero" class="col-12 w-100 d-flex justify-content-around align-items-center">
+                <img class="arrow rounded-pill" src="./rutas/Images/row-left.png" alt="row-left">
+                <a class="link text-decoration-none" href="#" target="_blank" rel="link dinamico">Link</a>
+                <img class="arrow rounded-pill" id="row-right" src="./rutas/Images/row-right.png" alt="row-right">        
             </div>
-           </main>
-        <footer>
+        </main>
+        <footer class="pb-3 mt-4 d-flex flex-column align-items-center">
             <div>
                 <a href="#"><img class="icono" src="./rutas/Images/instagram.png" alt="icono ig"></a>
                 <a href="#"><img class="icono" src="./rutas/Images/twitter.png" alt="icono twitter"></a>
                 <a href="#"><img class="icono" src="./rutas/Images/youtube.png" alt="icono youtube"></a>
             </div>
-            <p class="p__footer">Terminos y condiciones | Politica de privacidad</p>
+            <p class="p__footer mb-0">Terminos y condiciones | Politica de privacidad</p>
         </footer>
     </div>
 </body>
