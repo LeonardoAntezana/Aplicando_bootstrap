@@ -25,17 +25,19 @@
             </div>
             <div class="pt-4 pb-4 bg-dark text-white d-flex justify-content-around align-items-center col-12">
                 <h1 id="titulo_principal" class="m-0">Un pequeño viaje</h1>
-                <div class="navbar navbar-expand d-md-none">
-                    <button class="btn navbar-toggler" type="button" data-bs-togle="collapse" data-bs-target="#opciones">
+                <div class="d-md-none">
+                    <button class="btn navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#opciones" aria-controls="navBar" aria-expanded="false" aria-label="Toggle navigation">
                         <img class="menu" src="./rutas/Images/menu.png" alt="imagen-menu">
                     </button>
-                    <ul class="navbar-nav" aria-labelledby="">
-                        <li class="link"><a href="index.html">Home</a></li>
-                        <li class="link"><a href="rutas/destinos.html">Destinos</a></li>
-                        <li class="link"><a href="rutas/tips.html">Tips</a></li>
-                        <li class="link"><a href="rutas/aventuras.html">Aventuras</a></li>
-                        <li class="link"><a href="rutas/form-contacto.html">Contacto</a></li>
-                    </ul>
+                    <div class="navbar-collapse collapse" id="navBar">
+                        <ul class="navbar-nav">
+                            <li class="link nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                            <li class="link nav-item"><a class="nav-link" href="rutas/destinos.html">Destinos</a></li>
+                            <li class="link nav-item"><a class="nav-link" href="rutas/tips.html">Tips</a></li>
+                            <li class="link nav-item"><a class="nav-link" href="rutas/aventuras.html">Aventuras</a></li>
+                            <li class="link nav-item"><a class="nav-link" href="rutas/form-contacto.html">Contacto</a></li>
+                        </ul>
+                    </div>
                 </div> 
             </div>
             <nav class="d-none d-md-block col-md-12">
