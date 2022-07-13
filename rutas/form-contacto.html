@@ -10,58 +10,63 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../estilos/estilos.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" 
+    integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="../estilo.css">
     <title>Contacto</title>
 </head>
 <body>
-    <div class="grid-templeate-contacto" id="grids">
-        <header id="header__contacto">
-            <div id="redes-top">
+    <div class="container-fluid">
+        <header class="row">
+            <div class="d-none d-md-block col-12">
                 <a href="#"><img class="icono" src="../rutas/Images/instagram.png" alt="icono ig"></a>
-                <a href="#"><img src="../rutas/Images/twitter.png" alt="icono twitter" class="icono"></a>
-                <a href="#"><img src="../rutas/Images/youtube.png" alt="icono youtube" class="icono"></a>
+                <a href="#"><img class="icono" src="../rutas/Images/twitter.png" alt="icono twitter"></a>
+                <a href="#"><img class="icono" src="../rutas/Images/youtube.png" alt="icono youtube"></a>
             </div>
-            <div class="conteiner__titulo__menu">
-                <h1 class="titulo__header">Un pequeño viaje</h1>
+            <div class="pt-4 pb-4 bg-dark text-white d-flex justify-content-around align-items-center col-12">
+                <h1 class="titulo_principal m-0">Un pequeño viaje</h1>
                 <img class="menu" src="Images/menu.png" alt="imagen-menu">
-            <nav>
-                <ul>
-                    <li><a class="link" href="../index.html">Home</a></li>
-                    <li><a class="link" href="destinos.html">Destinos</a></li>
-                    <li><a class="link" href="tips.html">Tips</a></li>
-                    <li><a class="link" href="aventuras.html">Aventuras</a></li>
-                    <li><a class="link" href="form-contacto.html">Contacto</a></li>
+            </div>
+            <nav class="d-none d-md-block col-md-12">
+                <ul class="m-0 d-md-flex justify-content-center">
+                    <li class="d-md-inline p-2"><a class="link text-decoration-none" href="../index.html">Home</a></li>
+                    <li class="d-md-inline p-2"><a class="link text-decoration-none" href="destinos.html">Destinos</a></li>
+                    <li class="d-md-inline p-2"><a class="link text-decoration-none" href="tips.html">Tips</a></li>
+                    <li class="d-md-inline p-2"><a class="link text-decoration-none" href="aventuras.html">Aventuras</a></li>
+                    <li class="d-md-inline p-2"><a class="link text-decoration-none" href="form-contacto.html">Contacto</a></li>
                 </ul>
             </nav>
         </header>
-        <main class="main__contacto">
-            <h2 id="titulo__seccion-contacto">Contacto</h2>
-            <form id="formulario" action="">
-            <div id="conteiner__image__mail"><img src="../rutas/Images/email.png" alt="icon-mail"></div>
-            <label class="formulario__requisito" for="nombre"> Nombre:
-                <input class="formulario__requisito__input" type="text">
+        <main>
+            <h2>Contacto</h2>
+            <form action="">
+            <div id="conteiner__image__mail" class="d-flex justify-content-center">
+                <img class="email" src="../rutas/Images/email.png" alt="icon-mail">
+            </div>
+            <label for="nombre"> Nombre:
+                <input type="text">
             </label>
-            <label class="formulario__requisito" for="mail"> E-Mail(Obligatorio):
-                <input class="formulario__requisito__input" type="email">
+            <label> E-Mail(Obligatorio):
+                <input type="email">
             </label>
-            <label class="formulario__requisito" for="asunto"> Asunto:
-                <input class="formulario__requisito__input" type="text">
+            <label> Asunto:
+                <input type="text">
             </label>
-            <label class="formulario__requisito" for="mensaje"> Mensaje:
-                <textarea name="mensaje" class="formulario__requisito__input" id="textarea" cols="30" rows="10"></textarea>
+            <label> Mensaje:
+                <textarea name="mensaje" cols="30" rows="10"></textarea>
             </label>
             <label for="btn-enviar" class="btn-enviar">
                 <input class="input__enviar" type="submit">
             </label>
             </form>
         </main>
-        <footer id="footer__contacto">
-            <div class="redes__footer">
-                <a href="#"><img class="icono" src="Images/instagram.png" alt="icono ig"></a>
-                <a href="#"><img src="Images/twitter.png" alt="icono twitter" class="icono"></a>
-                <a href="#"><img src="Images/youtube.png" alt="icono youtube" class="icono"></a>
+        <footer class="pb-3 mt-4 d-flex flex-column align-items-center row">
+            <div class="pb-2 d-md-none">
+                <a href="#"><img class="icono pr-1" src="Images/instagram.png" alt="icono ig"></a>
+                <a href="#"><img class="icono pr-1" src="Images/twitter.png" alt="icono twitter"></a>
+                <a href="#"><img class="icono pr-1" src="Images/youtube.png" alt="icono youtube"></a>
             </div>
-            <p class="p__footer">Terminos y condiciones | Politica de privacidad</p>
+            <p class="p__footer mb-0">Terminos y condiciones | Politica de privacidad</p>
         </footer>
     </div>
 </body>
