@@ -17,20 +17,20 @@
 </head>
 <body>
     <div class="container-fluid">
-        <header class="bg-dark text-white row">
+        <header class="row">
             <div class="d-none d-md-block col-12">
-                <a href="#"><img class="icono" src="./rutas/Images/instagram.png" alt="icono ig"></a>
-                <a href="#"><img class="icono" src="./rutas/Images/twitter.png" alt="icono twitter"></a>
-                <a href="#"><img class="icono" src="./rutas/Images/youtube.png" alt="icono youtube"></a>
+                <a href="#"><img class="icono pr-1" src="./rutas/Images/instagram.png" alt="icono ig"></a>
+                <a href="#"><img class="icono pr-1" src="./rutas/Images/twitter.png" alt="icono twitter"></a>
+                <a href="#"><img class="icono pr-1" src="./rutas/Images/youtube.png" alt="icono youtube"></a>
             </div>
-            <div class="pt-4 pb-4 p-md-0 bg-color d-flex justify-content-around align-items-center col-12">
+            <div class="pt-4 pb-4 bg-dark text-white d-flex justify-content-around align-items-center col-12">
                 <h1 id="titulo_principal" class="m-0">Un pequeño viaje</h1>
-                <div class="dropdown">
+                <div class="dropdown d-md-none">
                     <button class="btn" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-expanded="true">
                         <img class="menu" src="./rutas/Images/menu.png" alt="imagen-menu">
                     </button>
                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <li class="link dropdown-item"><a href="index.html">Home</a></li>
+                        <li class="link dropdown-item active"><a href="index.html">Home</a></li>
                         <li class="link dropdown-item"><a href="rutas/destinos.html">Destinos</a></li>
                         <li class="link dropdown-item"><a href="rutas/tips.html">Tips</a></li>
                         <li class="link dropdown-item"><a href="rutas/aventuras.html">Aventuras</a></li>
@@ -38,13 +38,13 @@
                     </ul>
                 </div> 
             </div>
-            <nav class="d-none">
-                <ul>
-                    <li><a class="link text-decoration-none" href="index.html">Home</a></li>
-                    <li><a class="link text-decoration-none" href="rutas/destinos.html">Destinos</a></li>
-                    <li><a class="link text-decoration-none" href="rutas/tips.html">Tips</a></li>
-                    <li><a class="link text-decoration-none" href="rutas/aventuras.html">Aventuras</a></li>
-                    <li><a class="link text-decoration-none" href="rutas/form-contacto.html">Contacto</a></li>
+            <nav class="d-none d-md-block col-md-12">
+                <ul class="m-0 d-md-flex justify-content-center">
+                    <li class="d-md-inline p-2"><a class="link text-decoration-none" href="index.html">Home</a></li>
+                    <li class="d-md-inline p-2"><a class="link text-decoration-none" href="rutas/destinos.html">Destinos</a></li>
+                    <li class="d-md-inline p-2"><a class="link text-decoration-none" href="rutas/tips.html">Tips</a></li>
+                    <li class="d-md-inline p-2"><a class="link text-decoration-none" href="rutas/aventuras.html">Aventuras</a></li>
+                    <li class="d-md-inline p-2"><a class="link text-decoration-none" href="rutas/form-contacto.html">Contacto</a></li>
                 </ul>
             </nav>
         </header>
@@ -55,11 +55,11 @@
                 <img class="arrow rounded-pill" id="row-right" src="./rutas/Images/row-right.png" alt="row-right">        
             </div>
         </main>
-        <footer class="pb-3 mt-4 d-flex flex-column align-items-center">
-            <div>
-                <a href="#"><img class="icono" src="./rutas/Images/instagram.png" alt="icono ig"></a>
-                <a href="#"><img class="icono" src="./rutas/Images/twitter.png" alt="icono twitter"></a>
-                <a href="#"><img class="icono" src="./rutas/Images/youtube.png" alt="icono youtube"></a>
+        <footer class="pb-3 mt-4 d-flex flex-column align-items-center row">
+            <div class=" pb-2 d-md-none">
+                <a href="#"><img class="icono pr-1" src="./rutas/Images/instagram.png" alt="icono ig"></a>
+                <a href="#"><img class="icono pr-1" src="./rutas/Images/twitter.png" alt="icono twitter"></a>
+                <a href="#"><img class="icono pr-1" src="./rutas/Images/youtube.png" alt="icono youtube"></a>
             </div>
             <p class="p__footer mb-0">Terminos y condiciones | Politica de privacidad</p>
         </footer>

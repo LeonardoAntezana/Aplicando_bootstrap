@@ -6,8 +6,11 @@ body{
     padding: 0;
     margin: 0;
 }
-
+li{
+    list-style: none;
+}
 #titulo_principal{
+    font-family: 'Matic';
     font-size: 1.5rem;
 }
 
