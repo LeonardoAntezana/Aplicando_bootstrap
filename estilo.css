@@ -1,16 +1,35 @@
+body{
+    font-size: 1em;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+#titulo_principal{
+    font-size: 1.5rem;
+}
+
 .icono{
     height: 1rem;
     width: 1rem;
 }
 
-#menu{
-    height: 2rem ;
+.menu{
+    height: 1.5rem ;
 }
 
 .arrow{
     height: 2rem;
 }
 
-.container-fluid{
-    height: 100vh;
+
+
+#hero{
+    height: 75vh;
+    background-image: url(./rutas/Images/Laguna-esmeralda.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
 }
