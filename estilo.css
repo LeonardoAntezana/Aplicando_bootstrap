@@ -9,7 +9,7 @@ body{
 li{
     list-style: none;
 }
-#titulo_principal{
+.titulo_principal{
     font-family: 'Matic';
     font-size: 1.5rem;
 }
@@ -29,10 +29,6 @@ li{
 
 
 
-#hero{
-    height: 75vh;
-    background-image: url(./rutas/Images/Laguna-esmeralda.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
+.hero{
+    height: 60vh;
 }
