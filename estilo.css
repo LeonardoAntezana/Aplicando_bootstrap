@@ -6,9 +6,7 @@ body{
     padding: 0;
     margin: 0;
 }
-li{
-    list-style: none;
-}
+
 .titulo_principal{
     font-family: 'Matic';
     font-size: 1.5rem;
@@ -37,6 +35,10 @@ li{
 
 .hero{
     height: 70vh;
+}
+
+.hero-height{
+    height: 50vh;
 }
 
 @media screen and (min-width:800px){
