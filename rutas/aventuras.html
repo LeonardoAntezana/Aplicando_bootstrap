@@ -10,62 +10,90 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../estilos/estilos.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" 
+    integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="../estilo.css">
     <title>Aventuras</title>
 </head>
 <body>
-    <div class="grid-templeate-aventuras" id="grids">
-        <header id="header__aventuras">
-            <div id="redes-top">
-                <a href="#"><img class="icono" src="../rutas/Images/instagram.png" alt="icono ig"></a>
-                <a href="#"><img src="../rutas/Images/twitter.png" alt="icono twitter" class="icono"></a>
-                <a href="#"><img src="../rutas/Images/youtube.png" alt="icono youtube" class="icono"></a>
+    <div class="container-fluid">
+        <header class="row">
+            <div class="d-none d-md-block col-12">
+                <a href="#"><img class="icono pr-1" src="Images/instagram.png" alt="icono ig"></a>
+                <a href="#"><img class="icono pr-1" src="Images/twitter.png" alt="icono twitter"></a>
+                <a href="#"><img class="icono pr-1" src="Images/youtube.png" alt="icono youtube"></a>
             </div>
-            <div class="conteiner__titulo__menu">
-                <h1 class="titulo__header">Un pequeño viaje</h1>
-                <img class="menu" src="Images/menu.png" alt="imagen-menu">
-            <nav>
-                <ul>
-                    <li><a class="link" href="../index.html">Home</a></li>
-                    <li><a class="link" href="destinos.html">Destinos</a></li>
-                    <li><a class="link" href="tips.html">Tips</a></li>
-                    <li><a class="link" href="aventuras.html">Aventuras</a></li>
-                    <li><a class="link" href="form-contacto.html">Contacto</a></li>
+            <nav id="mobile" class="col-12 pt-4 pb-4 d-md-none navbar navbar-expand-lg navbar-light bg-dark justify-content-around align-items-center">
+                <h3 class="navbar-brand text-light m-0 p-0">Un pequeño viaje </h3>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav">
+                    <li class="nav-item active text-center">
+                      <a class="nav-link text-light" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item text-center">
+                      <a class="nav-link text-light" href="destinos.html">Destinos</a>
+                    </li>
+                    <li class="nav-item text-center">
+                      <a class="nav-link text-light" href="form-contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item text-center">
+                      <a class="nav-link text-light" href="aventuras.html">Aventuras<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item text-center">
+                        <a class="nav-link text-light" href="tips.html">Tips</a>
+                      </li>
+                  </ul>
+                </div>
+            </nav>
+            <nav id="desktop" class="p-0 d-none d-md-block col-12">
+                <h1 id="titulo_principal" class="m-0 pt-4 pb-4 bg-dark text-light text-md-center">Un pequeño viaje</h1>
+                <ul class="m-0 d-md-flex justify-content-center">
+                    <li class="d-md-inline p-2"><a class="link text-decoration-none" href="../index.html">Home</a></li>
+                    <li class="d-md-inline p-2"><a class="link text-decoration-none" href="destinos.html">Destinos</a></li>
+                    <li class="d-md-inline p-2"><a class="link text-decoration-none" href="tips.html">Tips</a></li>
+                    <li class="d-md-inline p-2"><a class="link text-decoration-none" href="aventuras.html">Aventuras</a></li>
+                    <li class="d-md-inline p-2"><a class="link text-decoration-none" href="form-contacto.html">Contacto</a></li>
                 </ul>
             </nav>
         </header>
-        <main id="main__aventuras">
-            <h2 class="titulo__seccion">Aventuras</h2>
-            <div id="conteiner-aventuras">
-                <article id="article-aventuras-patagonia">
-                    <img class="article__image__aventuras" src="Images/Patagonia.jpg" alt="Patagonia">
-                    <div class="contenido__article__aventuras">
-                        <h4 class="article__titulo">Primera vez en la Patagonia...</h4>
-                        <p class="p__contenido__article__aventuras">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas ipsa recusandae laboriosam,
+        <main class="row my-3">
+            <h2 class="h4 text-center col-12">Aventuras</h2>
+            <div class="row mx-md-0">
+                <article class="bg-secondary w-75 mx-auto p-3 mb-3 col-md-12 py-md-4 px-md-0 row d-md-flex justify-content-between">
+                    <img class="w-100 col-md-6" src="Images/Patagonia.jpg" alt="Patagonia">
+                    <div class="col-md-6 d-md-flex flex-column justify-content-around px-md-0" >
+                        <h4 class="h5 mb-3 text-center pt-2">Primera vez en la Patagonia...</h4>
+                        <p class="text-justify mb-0 pr-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas ipsa recusandae laboriosam,
                             placeat error quasi earum iste fugit, harum, 
                             alias expedita eveniet illum! Quidem deleniti ut iste vitae ea quia.</p>
                     </div>
                 </article>
-                <article id="article-aventuras-feria">
-                    <div class="contenido__article__aventuras">
-                        <h4 class="article__titulo">Definitivamente las mejores comidas del pais!</h4>
-                        <p class="p__contenido__article__aventuras">
+                <article class="bg-dark text-light w-75 mx-auto p-3 col-md-12 py-md-4 px-0 row d-md-flex justify-content-between">
+                    <div class="col-md-6 d-md-flex flex-column justify-content-around px-md-0 ">
+                        <h4 class="h5 mb-3 text-center">Definitivamente las mejores comidas del pais!</h4>
+                        <p class="text-justify">
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus sequi aut blanditiis excepturi illo.
                             Maxime reiciendis consectetur tempora ut sit temporibus nam ipsam quo, expedita, fugiat hic eum corporis iusto.
                         </p>
                     </div>
-                    <img class="article__image__aventuras" src="Images/Comida-Feria-2.jpg" alt="feria-comida">
+                    <img class="w-100 p-md-0 col-md-5" src="Images/Comida-Feria-2.jpg" alt="feria-comida">
                 </article>
             </div>
         </main>
-        <footer id="footer__aventuras">
-            <div class="redes__footer">
-                <a href="#"><img class="icono" src="Images/instagram.png" alt="icono ig"></a>
-                <a href="#"><img src="Images/twitter.png" alt="icono twitter" class="icono"></a>
-                <a href="#"><img src="Images/youtube.png" alt="icono youtube" class="icono"></a>
+        <footer class="pb-3 mt-md-4 d-flex flex-column align-items-center row">
+            <div class=" pb-2 d-md-none">
+                <a href="#"><img class="icono pr-1" src="Images/instagram.png" alt="icono ig"></a>
+                <a href="#"><img class="icono pr-1" src="Images/twitter.png" alt="icono twitter"></a>
+                <a href="#"><img class="icono pr-1" src="Images/youtube.png" alt="icono youtube"></a>
             </div>
-            <p class="p__footer">Terminos y condiciones | Politica de privacidad</p>
+            <p class="p__footer mb-0">Terminos y condiciones | Politica de privacidad</p>
         </footer>
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
 </body>
 </html>

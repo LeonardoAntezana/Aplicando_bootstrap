@@ -46,4 +46,8 @@ body{
         height: 90vh;
     }
 
+    .img-width{
+        width: 25rem;
+        height: 20rem;
+    }
 }
