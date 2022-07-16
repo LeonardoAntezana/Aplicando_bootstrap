@@ -35,14 +35,13 @@ li{
 
 
 
-#hero{
-    height: 75vh;
-    background-image: url(./rutas/Images/Laguna-esmeralda.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
+.hero{
+    height: 70vh;
 }
 
-.email{
-    height: 5rem;
+@media screen and (min-width:800px){
+    .hero{
+        height: 90vh;
+    }
+
 }
