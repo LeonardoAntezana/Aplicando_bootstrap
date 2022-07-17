@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" 
     integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
     <link rel="stylesheet" href="../estilo.css">
-    <title>Contacto</title>
+    <title>Aventuras</title>
 </head>
 <body>
     <div class="container-fluid">
@@ -30,25 +30,25 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                   <ul class="navbar-nav">
-                    <li class="nav-item text-center">
+                    <li class="nav-item active text-center">
                       <a class="nav-link text-light" href="../index.html">Home</a>
                     </li>
                     <li class="nav-item text-center">
                       <a class="nav-link text-light" href="destinos.html">Destinos</a>
                     </li>
                     <li class="nav-item text-center">
-                      <a class="nav-link active text-light" href="form-contacto.html">Contacto<span class="sr-only">(current)</span></a>
+                      <a class="nav-link text-light" href="form-contacto.html">Contacto</a>
                     </li>
                     <li class="nav-item text-center">
-                      <a class="nav-link text-light" href="aventuras.html">Aventuras</a>
+                      <a class="nav-link text-light" href="aventuras.html">Aventuras<span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item text-center">
                         <a class="nav-link text-light" href="tips.html">Tips</a>
                       </li>
                   </ul>
                 </div>
-              </nav>
-              <nav id="desktop" class="p-0 d-none d-md-block col-12">
+            </nav>
+            <nav id="desktop" class="p-0 d-none d-md-block col-12">
                 <h1 id="titulo_principal" class="m-0 pt-4 pb-4 bg-dark text-light text-md-center">Un pequeño viaje</h1>
                 <ul class="m-0 d-md-flex justify-content-center">
                     <li class="d-md-inline p-2"><a class="link text-decoration-none" href="../index.html">Home</a></li>
@@ -59,28 +59,29 @@
                 </ul>
             </nav>
         </header>
-        <main class="mb-4 row" >
-            <h2 class="col-12 bg-secondary h5 m-0 pt-3 pb-3">Contacto</h2>
-            <form class="w-50 m-auto pt-4">
-            <div class="d-flex justify-content-center mb-4">
-                <img class="email" src="Images/email.png" alt="icon-mail">
+        <main class="row my-3">
+            <h2 class="h4 text-center col-12">Aventuras</h2>
+            <div class="row mx-md-0">
+                <article class="bg-secondary w-75 mx-auto p-3 mb-3 col-md-12 py-md-4 px-md-0 row d-md-flex justify-content-between">
+                    <img class="w-100 col-md-6 h-50" src="Images/Patagonia.jpg" alt="Patagonia">
+                    <div class="col-md-6 d-md-flex flex-column justify-content-around px-md-0" >
+                        <h4 class="h5 mb-3 text-center pt-2">Primera vez en la Patagonia...</h4>
+                        <p class="text-justify mb-0 pr-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas ipsa recusandae laboriosam,
+                            placeat error quasi earum iste fugit, harum, 
+                            alias expedita eveniet illum! Quidem deleniti ut iste vitae ea quia.</p>
+                    </div>
+                </article>
+                <article class="bg-dark text-light w-75 mx-auto p-3 col-md-12 py-md-4 px-0 row d-md-flex flex-column justify-content-between ">
+                    <div class="col-md-6 d-md-flex flex-column justify-content-around px-md-0 ">
+                        <h4 class="h5 mb-3 text-center">Definitivamente las mejores comidas del pais!</h4>
+                        <p class="text-justify">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus sequi aut blanditiis excepturi illo.
+                            Maxime reiciendis consectetur tempora ut sit temporibus nam ipsam quo, expedita, fugiat hic eum corporis iusto.
+                        </p>
+                    </div>
+                    <img class="w-100 p-md-0 col-md-5 h-50" src="Images/Comida-Feria-2.jpg" alt="feria-comida">
+                </article>
             </div>
-            <label class="form-label d-block" for="nombre"> Nombre:
-                <input class="form-control" type="text" id="nombre">
-            </label>
-            <label class="form-label d-block" for="mail"> E-Mail(Obligatorio):
-                <input class="form-control" type="email">
-            </label>
-            <label class="form-label d-block" for="asunto"> Asunto:
-                <input class="form-control" type="text">
-            </label>
-            <label class="form-label d-block" for="mensaje"> Mensaje:
-                <textarea class="form-control" name="mensaje" cols="30" rows="10"></textarea>
-            </label>
-            <label class="m-0 d-flex justify-content-center" for="btn-enviar">
-                <input type="submit">
-            </label>
-            </form>
         </main>
         <footer class="pb-3 mt-md-4 d-flex flex-column align-items-center row">
             <div class=" pb-2 d-md-none">
@@ -91,6 +92,7 @@
             <p class="p__footer mb-0">Terminos y condiciones | Politica de privacidad</p>
         </footer>
     </div>
+
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
 </body>

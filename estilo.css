@@ -6,9 +6,7 @@ body{
     padding: 0;
     margin: 0;
 }
-li{
-    list-style: none;
-}
+
 .titulo_principal{
     font-family: 'Matic';
     font-size: 1.5rem;
@@ -39,9 +37,32 @@ li{
     height: 70vh;
 }
 
+.hero-height{
+    height: 50vh;
+}
+
+@media screen and(max-width:799px) {
+    .height-img-aventuras{
+        height: 10rem;
+    }
+}
+
+
 @media screen and (min-width:800px){
     .hero{
         height: 90vh;
     }
 
+    .img-width{
+        width: 25rem;
+        height: 20rem;
+    }
+
+    .articulo-destinos{
+        width: 18rem;
+    }
+
+    .height-img-destinos{
+        height: 13rem;
+    }
 }
