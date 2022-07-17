@@ -50,4 +50,12 @@ body{
         width: 25rem;
         height: 20rem;
     }
+
+    .articulo-destinos{
+        width: 18rem;
+    }
+
+    .height-img-destinos{
+        height: 13rem;
+    }
 }

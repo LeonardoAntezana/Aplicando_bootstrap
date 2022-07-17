@@ -10,88 +10,112 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../estilos/estilos.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" 
+    integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="../estilo.css">
     <title>Destinos</title>
 </head>
 <body>
-    <div class="grid-template-destinos" id="grids">
-        <header id="header__destinos">
-            <div id="redes-top">
-                <a href="#"><img class="icono" src="../rutas/Images/instagram.png" alt="icono ig"></a>
-                <a href="#"><img src="../rutas/Images/twitter.png" alt="icono twitter" class="icono"></a>
-                <a href="#"><img src="../rutas/Images/youtube.png" alt="icono youtube" class="icono"></a>
+    <div class="container-fluid">
+        <header class="row">
+            <div class="d-none d-md-block col-12">
+                <a href="#"><img class="icono pr-1" src="Images/instagram.png" alt="icono ig"></a>
+                <a href="#"><img class="icono pr-1" src="Images/twitter.png" alt="icono twitter"></a>
+                <a href="#"><img class="icono pr-1" src="Images/youtube.png" alt="icono youtube"></a>
             </div>
-            <div class="conteiner__titulo__menu">
-                <h1 class="titulo__header">Un pequeño viaje</h1>
-                <img class="menu" src="Images/menu.png" alt="imagen-menu">
-            </div>
-            <nav>
-                <ul>
-                    <li><a class="link" href="../index.html">Home</a></li>
-                    <li><a class="link" href="destinos.html">Destinos</a></li>
-                    <li><a class="link" href="tips.html">Tips</a></li>
-                    <li><a class="link" href="aventuras.html">Aventuras</a></li>
-                    <li><a class="link" href="form-contacto.html">Contacto</a></li>
+            <nav id="mobile" class="col-12 pt-4 pb-4 d-md-none navbar navbar-expand-lg navbar-light bg-dark justify-content-around align-items-center">
+                <h3 class="navbar-brand text-light m-0 p-0">Un pequeño viaje </h3>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav">
+                    <li class="nav-item active text-center">
+                      <a class="nav-link text-light" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item text-center">
+                      <a class="nav-link text-light" href="destinos.html">Destinos<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item text-center">
+                      <a class="nav-link text-light" href="form-contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item text-center">
+                      <a class="nav-link text-light" href="aventuras.html">Aventuras</a>
+                    </li>
+                    <li class="nav-item text-center">
+                        <a class="nav-link text-light" href="tips.html">Tips</a>
+                      </li>
+                  </ul>
+                </div>
+            </nav>
+            <nav id="desktop" class="p-0 d-none d-md-block col-12">
+                <h1 id="titulo_principal" class="m-0 pt-4 pb-4 bg-dark text-light text-md-center">Un pequeño viaje</h1>
+                <ul class="m-0 d-md-flex justify-content-center">
+                    <li class="d-md-inline p-2"><a class="link text-decoration-none" href="../index.html">Home</a></li>
+                    <li class="d-md-inline p-2"><a class="link text-decoration-none" href="destinos.html">Destinos</a></li>
+                    <li class="d-md-inline p-2"><a class="link text-decoration-none" href="tips.html">Tips</a></li>
+                    <li class="d-md-inline p-2"><a class="link text-decoration-none" href="aventuras.html">Aventuras</a></li>
+                    <li class="d-md-inline p-2"><a class="link text-decoration-none" href="form-contacto.html">Contacto</a></li>
                 </ul>
             </nav>
-            <h2 class="titulo__seccion">Destinos</h2>
+            <h2 class="col-12 h4 text-center mb-0 py-2">Destinos</h2>
         </header>
-        <main id="main__destinos">
-            <div id="conteiner-destinos">
-                <article id="conteiner-destinos__bariloche" class="conteiner-destinos__articulo">
-                    <img class="article__image" src="Images/brc.jpg" alt="bariloche">
-                        <div class="contenido__article__destinos">
-                            <h3 class="article__titulo">Bariloche</h3>
-                            <p class="p__contenido__article__destinos">Lorem, ipsum dolor sit amet consectetur
-                                adipisicing elit. Nihil ratione earum quidem vitae minus accusantium quae aliquam,
-                                iste est quis, dolorum, aut tempore laboriosam ab quaerat
-                                beatae corporis? Saepe, ducimus!</p>
-                        </div>
+        <main class="bg-secondary row">
+            <div class="w-75 mx-auto mt-4 d-md-flex flex-wrap justify-content-between">
+                <article class="mb-4 articulo-destinos ">
+                    <img class="w-100 height-img-destinos" src="Images/brc.jpg" alt="bariloche">
+                    <div>
+                        <h3 class="h5 pt-2">Bariloche</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur
+                            adipisicing elit. Nihil ratione earum quidem vitae minus accusantium quae aliquam,
+                            iste est quis, dolorum, aut tempore laboriosam ab quaerat
+                            beatae corporis? Saepe, ducimus!</p>
+                    </div>
                 </article>
-                <article id="conteiner-destinos__chalten" class="conteiner-destinos__articulo">
-                    <img class="article__image" src="Images/chalten.jpg" alt="chalten">
-                    <div class="contenido__article__destinos">
-                        <h3 class="article__titulo">El chalten</h3>
-                        <p class="p__contenido__article__destinos">Lorem, ipsum dolor sit amet consectetur
+                <article class="mb-4 articulo-destinos">
+                    <img class="w-100 height-img-destinos" src="Images/chalten.jpg" alt="chalten">
+                    <div>
+                        <h3 class="h5 pt-2">El chalten</h3>
+                        <p">Lorem, ipsum dolor sit amet consectetur
                             adipisicing elit. Nihil ratione earum quidem vitae minus accusantium quae aliquam,
                             iste est quis, dolorum, aut tempore laboriosam ab quaerat
                             beatae corporis? Saepe, ducimus!</p>
                     </div>   
                 </article>
-                <article id="conteiner-destinos__calafate" class="conteiner-destinos__articulo">
-                    <img class="article__image" src="Images/perito moreno.jpg" alt="calafate">
+                <article class="mb-4 articulo-destinos">
+                    <img class="w-100 height-img-destinos" src="Images/perito moreno.jpg" alt="calafate">
                     <div class="contenido__article__destinos">
-                        <h3 class="article__titulo">El calafate</h3>
+                        <h3 class="h5 pt-2">El calafate</h3>
                         <p class="p__contenido__article__destinos">Lorem, ipsum dolor sit amet consectetur
                             adipisicing elit. Nihil ratione earum quidem vitae minus accusantium quae aliquam,
                             iste est quis, dolorum, aut tempore laboriosam ab quaerat
                             beatae corporis? Saepe, ducimus!</p>
                     </div>
                 </article>
-                <article id="conteiner-destinos__ushuaia">
-                    <img class="article__image" src="./Images/Ushuaia.jpg" alt="ushuaia">
+                <article class="mb-4 articulo-destinos">
+                    <img class="w-100 height-img-destinos" src="./Images/Ushuaia.jpg" alt="ushuaia">
                     <div class="contenido__article__destinos">
-                        <h3 class="article__titulo">Ushuaia</h3>
+                        <h3 class="h5 pt-2">Ushuaia</h3>
                         <p class="p__contenido__article__destinos">Lorem, ipsum dolor sit amet consectetur
                             adipisicing elit. Nihil ratione earum quidem vitae minus accusantium quae aliquam,
                             iste est quis, dolorum, aut tempore laboriosam ab quaerat
                             beatae corporis? Saepe, ducimus!</p>
                     </div>
                 </article>
-                <article id="conteiner-destinos__mendoza">
-                    <img class="article__image" src="./Images/Mendoza.jpg" alt="Mendoza">
+                <article class="mb-4 articulo-destinos">
+                    <img class="w-100 height-img-destinos" src="./Images/Mendoza.jpg" alt="Mendoza">
                     <div class="contenido__article__destinos">
-                        <h3 class="article__titulo">Mendoza</h3>
+                        <h3 class="h5 pt-2">Mendoza</h3>
                         <p class="p__contenido__article__destinos">Lorem, ipsum dolor sit amet consectetur
                             adipisicing elit. Nihil ratione earum quidem vitae minus accusantium quae aliquam,
                             iste est quis, dolorum, aut tempore laboriosam ab quaerat
                             beatae corporis? Saepe, ducimus!</p>
                     </div>
                 </article>
-                <article id="conteiner-destinos__salta">
-                    <img class="article__image" src="./Images/Salta.jpg" alt="Salta">
+                <article class="mb-4 articulo-destinos">
+                    <img class="w-100 height-img-destinos" src="./Images/Salta.jpg" alt="Salta">
                     <div class="contenido__article__destinos">
-                        <h3 class="article__titulo">Salta</h3>
+                        <h3 class="h5 pt-2">Salta</h3>
                         <p class="p__contenido__article__destinos">Lorem, ipsum dolor sit amet consectetur
                             adipisicing elit. Nihil ratione earum quidem vitae minus accusantium quae aliquam,
                             iste est quis, dolorum, aut tempore laboriosam ab quaerat
@@ -100,14 +124,17 @@
                 </article>
             </div>
         </main>
-        <footer id="footer__destinos">
-            <div class="redes__footer">
-                <a href="#"><img class="icono" src="Images/instagram.png" alt="icono ig"></a>
-                <a href="#"><img src="Images/twitter.png" alt="icono twitter" class="icono"></a>
-                <a href="#"><img src="Images/youtube.png" alt="icono youtube" class="icono"></a>
+        <footer class="pb-3 mt-md-4 d-flex flex-column align-items-center row">
+            <div class=" pb-2 d-md-none">
+                <a href="#"><img class="icono pr-1" src="Images/instagram.png" alt="icono ig"></a>
+                <a href="#"><img class="icono pr-1" src="Images/twitter.png" alt="icono twitter"></a>
+                <a href="#"><img class="icono pr-1" src="Images/youtube.png" alt="icono youtube"></a>
             </div>
-            <p class="p__footer">Terminos y condiciones | Politica de privacidad</p>
+            <p class="p__footer mb-0">Terminos y condiciones | Politica de privacidad</p>
         </footer>
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
 </body>
 </html>
