@@ -41,6 +41,13 @@ body{
     height: 50vh;
 }
 
+@media screen and(max-width:799px) {
+    .height-img-aventuras{
+        height: 10rem;
+    }
+}
+
+
 @media screen and (min-width:800px){
     .hero{
         height: 90vh;
